@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232323"
+
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/songs_text"
+        android:layout_width="267dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="26dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:padding="10dp"
+        android:text="Lista de Reproducción"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/no_songs_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No se han encontrado Canciones para reproducir"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="386dp"
+        android:layout_height="449dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="10dp" />
+
+    <SearchView
+        android:id="@+id/txtbuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/background_border"
+        android:goIcon="@color/white"
+        android:textStyle="bold"
+        app:theme="@style/SearchViewStyle"
+        />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="67dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="88dp"
+        app:srcCompat="@drawable/logo02" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#016F92" />
+
+    <ImageView
+        android:id="@+id/imagenEnProceso"
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:layout_alignTop="@+id/view"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="289dp"
+        android:layout_marginBottom="26dp"
+        android:background="#262626"
+        android:padding="10dp"
+        app:srcCompat="@drawable/musica" />
+
+    <TextView
+        android:id="@+id/cancionEncurso"
+        android:layout_width="182dp"
+        android:layout_height="18dp"
+        android:layout_alignTop="@+id/view"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="83dp"
+        android:text="Sin rproducción"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/artistaEnCurso"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="38dp"
+        android:text=""
+        android:textColor="#16C8D6" />
+
+    <ImageView
+        android:id="@+id/pausaplay"
+        android:layout_width="68dp"
+        android:layout_height="62dp"
+        android:layout_alignTop="@+id/view"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="31dp"
+        app:srcCompat="@drawable/play" />
+
+
+</RelativeLayout>
